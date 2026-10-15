@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dino Egg Pop – egg shooter puzzle</title>
+  <meta name="description" content="Aim, match 3 and rescue the baby dinos! Free egg shooter puzzle with hundreds of levels. Offline, no account." />
+  <!-- Rich previews when the link is shared on Facebook / Zalo / Messenger -->
+  <meta property="og:title" content="Dino Egg Pop – Bắn Trứng Khủng Long" />
+  <meta property="og:description" content="Link matching animal tiles and clear the board! Free & offline." />
+  <meta property="og:image" content="https://nguyenduykhoa2601.github.io/dino-egg/og.png" />
+  <meta property="og:type" content="website" />
+  <style>
+    body { font-family: -apple-system, system-ui, Segoe UI, Roboto, sans-serif; margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      background: linear-gradient(160deg, #5BC0EB, #2F8F68); color: #fff; text-align: center; padding: 24px 16px; box-sizing: border-box; }
+    img.icon { width: 128px; height: 128px; border-radius: 28px; box-shadow: 0 16px 40px rgba(20,10,80,.45); }
+    h1 { margin: 20px 0 4px; font-size: 32px; }
+    p { margin: 0 0 24px; opacity: .9; }
+    a.btn { display: block; max-width: 280px; margin: 12px auto; padding: 14px 20px; border-radius: 16px; background: #ffc93c; color: #2d2a4a;
+      font-weight: 800; text-decoration: none; font-size: 18px; }
+    a.btn.ios { background: #fff; }
+    small a { color: #fff; opacity: .8; }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="icon" src="icon.png" alt="Dino Egg Pop icon" />
+    <h1>Dino Egg Pop</h1>
+    <p>Bắn Trứng Khủng Long · Egg Shooter Puzzle</p>
+    <a class="btn" id="play" href="https://play.google.com/store/apps/details?id=com.nguyenduykhoa.dinoegg">▶ Google Play</a>
+    <a class="btn ios" id="ios" href="play/">▶ Play on iPhone / web</a>
+    <small><a href="privacy.html">Privacy policy</a></small>
+  </main>
+  <script>
+    // Send phones straight to their store; desktop visitors see both buttons.
+    var ua = navigator.userAgent;
+    // Until the store listings are live, phones go to the playable web version.
+    if (/android|iphone|ipad|ipod/i.test(ua)) location.replace('play/');
+  </script>
+</body>
+</html>
