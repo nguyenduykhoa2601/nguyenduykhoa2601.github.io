@@ -1,0 +1,3 @@
+# Authorized ad sellers for apps listing this site as developer website.
+# Replace pub-XXXXXXXXXXXXXXXX with the AdMob publisher id after creating the AdMob account.
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
