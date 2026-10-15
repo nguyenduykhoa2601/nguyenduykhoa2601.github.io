@@ -34,8 +34,8 @@
   <script>
     // Send phones straight to their store; desktop visitors see both buttons.
     var ua = navigator.userAgent;
-    if (/android/i.test(ua)) location.replace(document.getElementById('play').href);
-    else if (/iphone|ipad|ipod/i.test(ua)) location.replace(document.getElementById('ios').href);
+    // Until the store listings are live, phones go to the playable web version.
+    if (/android|iphone|ipad|ipod/i.test(ua)) location.replace('play/');
   </script>
 </body>
 </html>
