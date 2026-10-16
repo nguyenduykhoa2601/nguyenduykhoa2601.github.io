@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Snake Hunt – offline snake arena game</title>
+  <meta name="description" content="Eat, grow and hunt AI snakes in an offline arena that gets harder the longer you survive. 18 skins, daily gifts, free with no purchases." />
+  <meta name="theme-color" content="#0A2230" />
+  <!-- Rich previews when the link is shared on Facebook / Zalo / Messenger -->
+  <meta property="og:title" content="Snake Hunt – Rắn Săn Mồi" />
+  <meta property="og:description" content="Eat, grow and hunt AI snakes! Offline snake arena game that gets harder the longer you survive." />
+  <meta property="og:image" content="https://nguyenduykhoa2601.github.io/snake-hunt/icon.png" />
+  <meta property="og:url" content="https://nguyenduykhoa2601.github.io/snake-hunt/" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="icon.png" />
+  <style>
+    body { font-family: -apple-system, system-ui, Segoe UI, Roboto, sans-serif; margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      background: radial-gradient(circle at 50% 30%, #1E6070, #0A2230 70%); color: #fff; text-align: center; padding: 24px 16px; box-sizing: border-box; }
+    img.icon { width: 128px; height: 128px; border-radius: 28px; box-shadow: 0 16px 40px rgba(3, 18, 26, .6); }
+    h1 { margin: 20px 0 4px; font-size: 32px; }
+    p { margin: 0 0 24px; opacity: .9; }
+    a.btn { display: block; max-width: 280px; margin: 12px auto; padding: 14px 20px; border-radius: 16px; background: #ffc93c; color: #2d2a4a;
+      font-weight: 800; text-decoration: none; font-size: 18px; box-shadow: 0 4px 0 #e0a800; }
+    .soon { font-size: 14px; opacity: .7; margin: 0 0 20px; }
+    small a { color: #fff; opacity: .8; }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="icon" src="icon.png" alt="Snake Hunt icon" />
+    <h1>Snake Hunt</h1>
+    <p>Rắn Săn Mồi · Offline Snake Arena</p>
+    <a class="btn" id="play" href="https://play.google.com/store/apps/details?id=com.nguyenduykhoa.snakehunt">▶ Google Play</a>
+    <p class="soon">iPhone version coming soon</p>
+    <small><a href="privacy.html">Privacy policy</a></small>
+  </main>
+  <script>
+    // Android visitors go straight to the store listing; everyone else sees the page.
+    if (/android/i.test(navigator.userAgent)) location.replace(document.getElementById('play').href);
+  </script>
+</body>
+</html>
